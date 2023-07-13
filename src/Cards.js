@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Cards extends Component {
     render() {
         return (
-            <div className="card" >
+            <div className="card" style={{ marginBottom: '1em' }}>
               <img src='https://m.media-amazon.com/images/I/71O-Il088wL._AC_UF894,1000_QL80_.jpg' 
               className="card-img-top" 
               />

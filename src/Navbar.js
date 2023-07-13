@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Navbar extends Component {
     render() {
         return (
-          <nav className="navbar navbar-expand-lg bg-body-tertiary">
+          <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ marginBottom: '1em' }}>
           <div className="container-fluid">
             <a className="navbar-brand" href="#">Loja Virtual</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

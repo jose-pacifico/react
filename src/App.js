@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
 import React, { Component } from 'react'
 import Table from './Table'
 import Navbar from './Navbar'
@@ -32,7 +30,7 @@ class App extends Component {
                         <Cards/>
                     </div>
                 </div>
-              </div>
+            </div>
         )
     }
 }
