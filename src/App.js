@@ -1,35 +1,45 @@
 import React, { Component } from 'react'
-import Table from './Table'
-import Navbar from './Navbar'
-import Cards from './Cards'
+import Navbar from './components/Navbar'
+import Content from "./components/Content";
 
 class App extends Component {
     render() {
+        const produtos = [
+        {
+            nome: "Boneco Grogu - The Mandalorian",
+            preco: "R$500,00",
+            imagem: "https://m.media-amazon.com/images/I/71O-Il088wL._AC_UF894,1000_QL80_.jpg"
+        },
+        {
+            nome: "Boneco Grogu - The Mandalorian",
+            preco: "R$500,00",
+            imagem: "https://m.media-amazon.com/images/I/71O-Il088wL._AC_UF894,1000_QL80_.jpg"
+        },
+        {
+            nome: "Boneco Grogu - The Mandalorian",
+            preco: "R$500,00",
+            imagem: "https://m.media-amazon.com/images/I/71O-Il088wL._AC_UF894,1000_QL80_.jpg"
+        },
+        {
+            nome: "Boneco Grogu - The Mandalorian",
+            preco: "R$500,00",
+            imagem: "https://m.media-amazon.com/images/I/71O-Il088wL._AC_UF894,1000_QL80_.jpg"
+        },
+        {
+            nome: "Boneco Grogu - The Mandalorian",
+            preco: "R$500,00",
+            imagem: "https://m.media-amazon.com/images/I/71O-Il088wL._AC_UF894,1000_QL80_.jpg"
+        },
+        {
+            nome: "Boneco Grogu - The Mandalorian",
+            preco: "R$500,00",
+            imagem: "https://m.media-amazon.com/images/I/71O-Il088wL._AC_UF894,1000_QL80_.jpg"
+        }
+    ]
         return (
             <div className="container text-center">
                 <Navbar/>
-                <div class="row">
-                    <div class="col">
-                        <Cards/>
-                    </div>
-                    <div class="col">
-                        <Cards/>
-                    </div>
-                    <div class="col">
-                        <Cards/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <Cards/>
-                    </div>
-                    <div class="col">
-                        <Cards/>
-                    </div>
-                    <div class="col">
-                        <Cards/>
-                    </div>
-                </div>
+                <Content produtos = {produtos} />
             </div>
         )
     }
