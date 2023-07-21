@@ -6,6 +6,10 @@ const Cards = (props) => {
       <div className="card-body">
         <h5 className="card-title">{produto.nome}</h5>
         <p className="card-text">Preço: {produto.preco}</p>
+        <button type="button" className="btn btn-success">
+          Adicionar ao carrinho
+        </button>
+  
       </div>
     </div>
   );
