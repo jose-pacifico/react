@@ -1,10 +1,11 @@
 import Cards from "./Cards";
 
 const Content = (props) => {
-  const cols = props.produtos.map((produto) => {
+  const { produtos, addProduto, rmProduto, listaCarrinho } = props;
+  const cols = produtos.map((produto) => {
     return (
       <div className="col-sm-4">
-        <Cards produto = {produto} />
+        <Cards produto = {produto} addProduto = {addProduto}/>
       </div>
     );
   });
