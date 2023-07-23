@@ -5,6 +5,7 @@ const Content = (props) => {
   const { produtos, addProduto, rmProduto, listaCarrinho, pagina } = props;
   
   switch (pagina) {
+
     case 'home':
       const cols = produtos.map((produto) => {
         return (
@@ -13,13 +14,12 @@ const Content = (props) => {
           </div>
         );
       });
-    
       return <div className="row"> {cols} </div>;
     
       case 'cart':
         return (
-          <div className="col-sm-4">
-            <Cart addProduto = {addProduto}/>
+          <div className="col-sm-12">
+            <Cart rmProduto = {rmProduto} listaCarrinho={listaCarrinho}/>
           </div>
         );
   }

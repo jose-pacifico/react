@@ -4,11 +4,6 @@ import Content from "./components/Content";
 
 class App extends Component {
 
-    state = {
-        listaCarrinho: [],
-        pagina: "cart",
-      };
-
       addProduto = (produto) => {
         const { listaCarrinho } = this.state;
         console.log("Produto adicionado ao carrinho ", produto);
@@ -27,6 +22,11 @@ class App extends Component {
         });
       };
 
+      state = {
+        listaCarrinho: [],
+        pagina: "home",
+      };
+      
       setPage = (pagina) => {
         console.log(pagina);
         this.setState({
