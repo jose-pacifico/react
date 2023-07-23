@@ -6,6 +6,7 @@ class App extends Component {
 
     state = {
         listaCarrinho: [],
+        pagina: "cart",
       };
 
       addProduto = (produto) => {
@@ -23,6 +24,13 @@ class App extends Component {
             listaCarrinho: listaCarrinho.filter((produto, i) => {
             return i !== index;
           }),
+        });
+      };
+
+      setPage = (pagina) => {
+        console.log(pagina);
+        this.setState({
+            pagina: pagina,
         });
       };
 
@@ -61,12 +69,13 @@ class App extends Component {
     ]
         return (
             <div className="container text-center">
-                <Navbar/>
+                <Navbar setPage={this.setPage}/>
                 <Content 
                 produtos = {produtos} 
                 addProduto={this.addProduto}
                 rmProduto={this.rmProduto}
                 listaCarrinho={this.state.listaCarrinho}
+                pagina={this.state.pagina}
                 />
             </div>
         )
